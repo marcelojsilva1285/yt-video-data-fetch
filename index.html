@@ -12,25 +12,25 @@
     <h1>YouTube Video Data Fetcher</h1>
 
     <div class="fetch-data">
-      <input type="text" id="input-text" placeholder="Entre com URL do Video aqui">
-      <button>Buscar Dados</button>
+      <input type="text" id="input-text" placeholder="Entre com URL do Video aqui" required>
+      <button id="fetch-btn" >Buscar Dados</button>
     </div>
     
     <div class="main">
-      <a href="url">
-        <img width="200px" height="200" src="https://i9.ytimg.com/vi/rVBNL6wfRdU/hq720_custom_3.jpg" alt="thumbnail">        
+      <a id="link-yotube" target="_blank" href="https://www.youtube.com/watch?v=ktUF6kyY1eY">
+        <img id="video-thumbnail" width="200px" height="200" src="https://api.backlinko.com/app/uploads/2024/07/reverse-image-search-blog-post-image.png" alt="thumbnail">        
       </a>
       <div class="info-video">
-        <h3>API com IA do zero com Node JS e Next JS 🔥</h3>
+        <h3 id="video-title" >Busquem informações abrangentes sobre vídeos específicos do YouTube. 🔥</h3>
         <ul>
-          <li>Views: 124</li>
-          <li>Uploud: 17 minutes ago </li>
-          <li>Duração: 1 hour 50 minutes 40 seconds </li>
+          <li id="video-views" >Views: 376348</li>
+          <li id="video-uploud">Uploaded: 17 minutes ago </li>
+          <li id="video-duration">Duração: 1 hour 50 minutes 40 seconds </li>
         </ul>
       </div>
     </div>
 
   </div>
-  <script src="script-js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

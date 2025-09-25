@@ -21,6 +21,7 @@ body{
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   background-color:#333333 ;
+  max-width: 800px;
 }
 
 h1{
@@ -65,11 +66,13 @@ button:hover{
 
 .main a img{
   border-radius: 10px;
+  transition: transform 1s ease-in-out;
 } 
 
-.info-video{
-  max-width: 40%;
+.main a img:hover{
+  transform: scale(1.1);
 }
+
 
 .info-video ul{
   display: flex;
@@ -79,6 +82,7 @@ button:hover{
 }
 
 .info-video h3{
+  
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 18px;
