@@ -11,13 +11,12 @@ fetchBtn.addEventListener('click', () => {
   linkYoutube.setAttribute("href", `${videoUrl.value}`)
   console.log(linkYoutube)
 
-  const videoId = videoUrl.value.split('=');
+  const videoId = videoUrl.value.split('=', 2)[1];
   const url = `https://abhi-api.vercel.app/api/search/yts?text=${videoId[1]}`;
 
 
   // 1. Desabilita o botão para evitar cliques duplicados
   fetchBtn.disabled = true;
-
   fetchBtn.style.backgroundColor = 'grey';
 
   // 2. Muda o texto do botão
@@ -65,3 +64,4 @@ function mostrarInfosVideo(dados) {
   videoUploaded.textContent = `${result.uploaded}`;
   videoDuration.textContent = `${result.duration}`;
 }
+
